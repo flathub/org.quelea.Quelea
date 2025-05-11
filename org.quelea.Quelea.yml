@@ -54,7 +54,7 @@ modules:
     sources:
       - type: archive
         url: https://github.com/quelea-projection/Quelea/releases/download/CI-RELEASE/quelea-CI-UNSTABLE-java-app.tar.gz
-        sha256: 76a3d9c5e912bf74972852fb78507d81da8be8d3a0eaed81638e42e0728febd5
+        sha256: 8ec652fae74d9c1571572b3da4a61b8d313d9c4b8a0652c625f0fe36f37c8fc1
         strip-components: 1
 
       - type: file
