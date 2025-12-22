@@ -24,21 +24,21 @@ finish-args:
   - --env=JAVA_HOME=/app/jre
 
 modules:
-  - name: openjdk-jre24
+  - name: openjdk-jre25
     buildsystem: simple
     build-commands:
       - cp -a . /app/jre
     sources:
       - type: archive
-        url: https://cdn.azul.com/zulu/bin/zulu24.30.13-ca-fx-jre24.0.1-linux_x64.tar.gz
-        sha256: a65fe80a3ff4c352709bec1750e93d5680f73eb43b3bb7d6b7ab60c6fca5669f 
+        url: https://cdn.azul.com/zulu/bin/zulu25.28.85-ca-fx-jre25.0.0-linux_x64.tar.gz
+        sha256: 1d00a4fd4815ce29b1d61863ae0905630242275afcbc7a4f0ba35bb0ba6da294
         strip-components: 1
         only-arches:
           - x86_64
 
       - type: archive
-        url: https://cdn.azul.com/zulu/bin/zulu24.30.13-ca-fx-jre24.0.1-linux_aarch64.tar.gz
-        sha256: 3b2097972e08da3acf84bf12fc59909a7c0b7a4037738f01f8f9ec3fd249b971
+        url: https://cdn.azul.com/zulu/bin/zulu25.28.85-ca-fx-jre25.0.0-linux_aarch64.tar.gz
+        sha256: 24409f182876f368459488ee2e9ae6d3536a374de981c2817a19874d4420d605
         strip-components: 1
         only-arches:
           - aarch64
@@ -54,7 +54,7 @@ modules:
     sources:
       - type: archive
         url: https://github.com/quelea-projection/Quelea/releases/download/CI-RELEASE/quelea-CI-UNSTABLE-java-app.tar.gz
-        sha256: 76a3d9c5e912bf74972852fb78507d81da8be8d3a0eaed81638e42e0728febd5
+        sha256: 036fa7ad749eba224838d5e9172fccc563e6484b75b31296fe7b91d46236fe74
         strip-components: 1
 
       - type: file
